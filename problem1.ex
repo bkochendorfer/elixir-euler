@@ -1,8 +1,9 @@
-defmodule Eulixer do
+defmodule Problem1 do
   @doc """
   If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
   Find the sum of all the multiples of 3 or 5 below 1000.
+  iex |> Problem1.threefive 1..999
   """
 
   def of(num) when rem(num, 3) == 0 do
@@ -21,4 +22,4 @@ defmodule Eulixer do
 
 end
 
-Eulixer.threefive 1..999
+IO.puts Problem1.threefive 1..999
