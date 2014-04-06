@@ -22,7 +22,7 @@ defmodule Problem7 do
   end
 
   def prime_gen(_, primes) when length(primes) == 10_001 do
-      IO.inspect primes |> List.last
+      primes |> List.last
   end
 
   def prime_gen(n \\ 2, primes \\ []) do
@@ -35,4 +35,4 @@ defmodule Problem7 do
   end
 end
 
-Problem7.prime_gen
+IO.inspect Problem7.prime_gen
